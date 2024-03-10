@@ -1,0 +1,18 @@
+1. model.Product -> repository.ProductRepository -> dto.ProductRequest -> service.ProductService ->
+-> controller.ProductController : public void createProduct
+2. dto.ProductResponse -> ProductService : getAllProducts() ->
+-> controller.ProductController : public List<ProductResponse> getAllProducts()
+3. интеграционный тест:
+testcontainers.org
+<dependencyManagement> in pom.xml,   <dependency> for mongoDB , junit-jupiter
+class ProductServiceApplicationTests:
+
+
+
+{
+        "name": "Project",
+        "description": "decsription of product",
+        "price": 1200
+    }
+
+docker-compose -f Compose-docker.yaml up -d
